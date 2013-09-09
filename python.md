@@ -5,7 +5,7 @@ python gotchas
 
 modify variable in outer function
 ----
-```
+```python
 def outer():
     times_called = 0
     def inner():
@@ -60,7 +60,7 @@ default argument
 
 Default argument is evaluated when function is defined, not when function is executed!
 
-```
+```python
 >>>import time
 >>> def report(when=time.time()):
 ...     print when
@@ -74,7 +74,7 @@ Default argument is evaluated when function is defined, not when function is exe
 
 Another example,
 
-```
+```python
 >>> def foo(x=[]):
 ...     x.append(1)
 ...     print x
@@ -89,7 +89,7 @@ Another example,
 
 Solution, use None for default argument value instead:
 
-```
+```python
 >>> def foo(x=None):
 ...     if x is None:
 ...         x = []
@@ -101,7 +101,7 @@ Solution, use None for default argument value instead:
 closure closes over variables, not values
 ----
 
-```
+```python
 funcs = []
 for i in range(4):
     def f():
