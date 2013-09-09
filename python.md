@@ -54,8 +54,7 @@ Solution:
             return inner
 
 
-<a id="default_argument"></a>
-default argument
+[default argument](id:default_argument)
 ----
 
 Default argument is evaluated when function is defined, not when function is executed!
